@@ -13,7 +13,7 @@
 <body>
     <div class="header-container">
         <header class="main-header">
-            <img width="41px" height="28px" src="/images/fcclogo.png" alt="freecodecamp-logo">
+            <img src="/images/free-code-camp-logo-github.svg" alt="freecodecamp-logo">
             <h3>fcc web docs</h3>
         </header>
         <div class="styling-divider">
@@ -33,14 +33,78 @@
             <header>HTML: HyperText Markup Language</header>
             <article class="section-content">
                 <p class="content">
-                      <span class="article-accent">HTML</span> (HyperText Markup Language) is the most basic building block of the Web.
-                      It defines the meaning and structure of web content.
-                      Other technologies besides HTML are generally used to 
-                      describe a web page's appearance/presentation (CSS) or functionality/behavior (JavaScript).
+                    <strong>HTML</strong> (HyperText Markup Language) is the most basic building block of the Web.
+                    It defines the meaning and structure of web content.
+                    Other technologies besides HTML are generally used to 
+                    describe a web page's appearance/presentation (CSS) or functionality/behavior (JavaScript).
+                </p>
+                <p class="content">
+                    "Hypertext" refers to links that connect web pages to one another,
+                    either within a single website or between websites. Links are a fundamental aspect of the Web.
+                    By uploading content to the Internet and linking it to pages created by other people, you become an active participant in the World Wide Web.
+                </p>
+                <p class="content">
+                    HTML uses "markup" to annotate text, images, and other content for display in a Web browser.
+                    HTML markup includes special "elements" such as <code>&lthead&gt</code>, <code>&lttitle&gt</code>, <code>&ltbody&gt</code>,
+                    <code>&ltaside&gt</code>, <code>&ltnav&gt</code>, <code>&ltheader&gt</code>, <code>&ltfooter&gt</code>, <code>&ltarticle&gt</code>,
+                    <code>&ltsection&gt</code>, <code>&ltp&gt</code>, and many others.
+                </p>
+                <p class="content">
+                    An HTML element is set off from other text in a document by "tags", which consist of the element name surrounded by "<code>&lt</code>" and "<code>&gt</code>".
+                    The name of an element inside a tag is case insensitive. That is, it can be written in uppercase, lowercase, or a mixture. For example, the <code>&lttitle&gt</code>
+                    tag can be written as <code>&ltTitle&gt</code>, <code>&ltTITLE&gt</code> or in any other way. However, the convention and recommended practice is to write tags in lowercase.
+                </p>
+                <p class="content">
+                    The articles below can help you learn more about HTML.
                 </p>
             </article>
         </section>
-        
+        <section class="main-section" id="Key_Resources">
+            <header>Key Resources</header>
+            <p class="content">If you're new to web development, be sure to read our <a href="#">HTML Basics</a> article to learn what HTML is and how to use it.</p>
+            <p class="content">For articles about how to use HTML, as well as tutorials and complete examples, check out our <a href="#">HTML Learning Area</a>.</p>
+            <p class="content">In our extensive <a href="#">HTML reference</a> section, you'll find the details about every element and attribute in HTML.</p>
+            <p class="content">
+                Before you can write any markup, you'll need an integrated development environment or IDE for short. We recommend using Visual Studio Code
+                which you can download <a href="https://code.visualstudio.com/download" target="_blank">here</a>.
+            </p>
+        </section>
+        <section class="main-section" id="Get_Started">
+            <header>Get Started</header>
+            <p class="content">
+                Now that you are up to speed with the basics of HTML, let's take a look at some basic code.
+                Below is an example of HTML5 "boiler plate code". This is the foundation of all HTML5 webpages:
+            </p>
+            <p class="code-block">
+                <code>&lt!DOCTYPE html&gt</code>
+                <code>&lthtml lang="en"&gt</code>    
+                <code>&lthead&gt</code>
+                <code>&ltmeta charset="UTF-8"&gt</code>
+                <code>&ltmeta name="viewport" content="width=device-width, initial-scale=1.0"&gt</code>
+                <code>&ltmeta http-equiv="X-UA-Compatible" content="ie=edge"&gt</code>
+                <code>&lttitle&gt&lttitle&gt</code>
+                <code>&ltlink rel="stylesheet" href="style.css"&gt</code>
+                <code>&lt/head&gt</code>
+                <code>&ltbody&gt</code>
+                <code>&lt/body&gt</code>
+                <code>&lt/html&gt</code>
+            </p>
+            <p class="content">
+                After creating an index.html file in vscode, go to the first line and type the following: <code>html:5</code>.
+                You should see the above boiler plate code now in your own workspace thanks to Visual Studio Codes built-in Emmet extension.
+                Go ahead and try give your website a document title. If you get stuck, try placing it within the <code>&lttitle&gt</code> tag.
+            </p>
+            <p class="content">
+                If you navigate to the directory where you created the project and click the index.html file, you should
+                see your default browser open up to the webpage. Making changes within your IDE and hitting refresh in the browser
+                will reveal these changes. Try placing a header on your webpage with the title "Hello World!". If you get stuck, refer below to the code snippet:
+            </p>
+            <p class="code-block">
+                <code>&ltbody&gt</code>
+                <code>&lth1&gtHello World!&lt/h1&gt</code>
+                <code>&lt/body&gt</code>
+            </p>
+        </section>
     </main>
 </body>
 </html>
