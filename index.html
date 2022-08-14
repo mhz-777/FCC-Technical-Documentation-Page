@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">  
     <title>FCC-Technical-Documentation-Page </title>
+    <script src="script.js"></script>
 </head>
 <body>
     <div class="header-container">
@@ -17,20 +18,23 @@
             <h3>fcc web docs</h3>
         </header>
         <div class="styling-divider">
-            <button class="show-nav"></button>
+            <script src="mobilenav.js"></script>
+            <button class="show-nav" onclick="showNav()"></button>
         </div>
     </div>
-    <nav id="navbar">
-        <header>HTML Documentation</header>
-        <div class="links-container">
-            <a href="#HTML:_HyperText_Markup_Language" class="nav-link">HTML: HyperText Markup Language</a>
-            <a href="#Key_Resources" class="nav-link">Key Resources</a>
-            <a href="#Get_Started" class="nav-link">Get Started</a>
-            <a href="#Guides" class="nav-link">Guides</a>
-            <a href="#Moving_Forward" class="nav-link">Moving Forward</a>
-            <a href="#References" class="nav-link">References</a>
-        </div>
-    </nav>
+    <div id="nav-container">
+        <nav id="navbar">
+            <header class="mobile-nav-header">HTML Documentation</header>
+            <div class="links-container">
+                <a href="#HTML:_HyperText_Markup_Language" class="nav-link">HTML: HyperText Markup Language</a>
+                <a href="#Key_Resources" class="nav-link">Key Resources</a>
+                <a href="#Get_Started" class="nav-link">Get Started</a>
+                <a href="#Guides" class="nav-link">Guides</a>
+                <a href="#Moving_Forward" class="nav-link">Moving Forward</a>
+                <a href="#References" class="nav-link">References</a>
+            </div>
+        </nav>
+    </div>
     <main id="main-doc">
         <section class="main-section" id="HTML:_HyperText_Markup_Language">
             <header>HTML: HyperText Markup Language</header>
