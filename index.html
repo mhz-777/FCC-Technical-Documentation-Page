@@ -22,168 +22,170 @@
             <button class="show-nav" onclick="showNav()"></button>
         </div>
     </div>
-    <div id="nav-container">
-        <nav id="navbar">
-            <header class="mobile-nav-header">HTML Documentation</header>
-            <div class="links-container">
-                <a href="#HTML:_HyperText_Markup_Language" class="nav-link">HTML: HyperText Markup Language</a>
-                <a href="#Key_Resources" class="nav-link">Key Resources</a>
-                <a href="#Get_Started" class="nav-link">Get Started</a>
-                <a href="#Guides" class="nav-link">Guides</a>
-                <a href="#Moving_Forward" class="nav-link">Moving Forward</a>
-                <a href="#References" class="nav-link">References</a>
-            </div>
-        </nav>
+    <div class="desktop-container">
+        <div id="nav-container">
+            <nav id="navbar">
+                <header class="mobile-nav-header">HTML Documentation</header>
+                <div class="links-container">
+                    <a href="#HTML:_HyperText_Markup_Language" class="nav-link">HTML: HyperText Markup Language</a>
+                    <a href="#Key_Resources" class="nav-link">Key Resources</a>
+                    <a href="#Get_Started" class="nav-link">Get Started</a>
+                    <a href="#Guides" class="nav-link">Guides</a>
+                    <a href="#Moving_Forward" class="nav-link">Moving Forward</a>
+                    <a href="#References" class="nav-link">References</a>
+                </div>
+            </nav>
+        </div>
+        <main id="main-doc">
+            <section class="main-section" id="HTML:_HyperText_Markup_Language">
+                <header>HTML: HyperText Markup Language</header>
+                <article class="section-content">
+                    <p class="content">
+                        <strong>HTML</strong> (HyperText Markup Language) is the most basic building block of the Web.
+                        It defines the meaning and structure of web content.
+                        Other technologies besides HTML are generally used to 
+                        describe a web page's appearance/presentation (CSS) or functionality/behavior (JavaScript).
+                    </p>
+                    <p class="content">
+                        "Hypertext" refers to links that connect web pages to one another,
+                        either within a single website or between websites. Links are a fundamental aspect of the Web.
+                        By uploading content to the Internet and linking it to pages created by other people, you become an active participant in the World Wide Web.
+                    </p>
+                    <p class="content">
+                        HTML uses "markup" to annotate text, images, and other content for display in a Web browser.
+                        HTML markup includes special "elements" such as <code>&lthead&gt</code>, <code>&lttitle&gt</code>, <code>&ltbody&gt</code>,
+                        <code>&ltaside&gt</code>, <code>&ltnav&gt</code>, <code>&ltheader&gt</code>, <code>&ltfooter&gt</code>, <code>&ltarticle&gt</code>,
+                        <code>&ltsection&gt</code>, <code>&ltp&gt</code>, and many others.
+                    </p>
+                    <p class="content">
+                        An HTML element is set off from other text in a document by "tags", which consist of the element name surrounded by "<code>&lt</code>" and "<code>&gt</code>".
+                        The name of an element inside a tag is case insensitive. That is, it can be written in uppercase, lowercase, or a mixture. For example, the <code>&lttitle&gt</code>
+                        tag can be written as <code>&ltTitle&gt</code>, <code>&ltTITLE&gt</code> or in any other way. However, the convention and recommended practice is to write tags in lowercase.
+                    </p>
+                    <p class="content">
+                        The articles below can help you learn more about HTML.
+                    </p>
+                </article>
+            </section>
+            <section class="main-section" id="Key_Resources">
+                <header>Key Resources</header>
+                <p class="content">If you're new to web development, be sure to read our <a href="#">HTML Basics</a> article to learn what HTML is and how to use it.</p>
+                <p class="content">For articles about how to use HTML, as well as tutorials and complete examples, check out our <a href="#">HTML Learning Area</a>.</p>
+                <p class="content">In our extensive <a href="#">HTML reference</a> section, you'll find the details about every element and attribute in HTML.</p>
+                <p class="content">
+                    Before you can write any markup, you'll need an integrated development environment or IDE for short. We recommend using Visual Studio Code
+                    which you can download <a href="https://code.visualstudio.com/download" target="_blank">here</a>.
+                </p>
+            </section>
+            <section class="main-section" id="Get_Started">
+                <header>Get Started</header>
+                <p class="content">
+                    Now that you are up to speed with the basics of HTML, let's take a look at some basic code.
+                    Below is an example of HTML5 "boiler plate code". This is the foundation of all HTML5 webpages:
+                </p>
+                <p class="code-block">
+                    <code>&lt!DOCTYPE html&gt</code>
+                    <code>&lthtml lang="en"&gt</code>    
+                    <code>&lthead&gt</code>
+                    <code>&ltmeta charset="UTF-8"&gt</code>
+                    <code>&ltmeta name="viewport" content="width=device-width, initial-scale=1.0"&gt</code>
+                    <code>&ltmeta http-equiv="X-UA-Compatible" content="ie=edge"&gt</code>
+                    <code>&lttitle&gt&lttitle&gt</code>
+                    <code>&ltlink rel="stylesheet" href="style.css"&gt</code>
+                    <code>&lt/head&gt</code>
+                    <code>&ltbody&gt</code>
+                    <code>&lt/body&gt</code>
+                    <code>&lt/html&gt</code>
+                </p>
+                <p class="content">
+                    After creating an index.html file in vscode, go to the first line and type the following: <code>html:5</code>.
+                    You should see the above boiler plate code now in your own workspace thanks to Visual Studio Codes built-in Emmet extension.
+                    Go ahead and try give your website a document title. If you get stuck, try placing it within the <code>&lttitle&gt</code> tag.
+                </p>
+                <p class="content">
+                    If you navigate to the directory where you created the project and click the index.html file, you should
+                    see your default browser open up to the webpage. Making changes within your IDE and hitting refresh in the browser
+                    will reveal these changes. Try placing a header on your webpage with the title "Hello World!". If you get stuck, refer below to the code snippet:
+                </p>
+                <p class="code-block">
+                    <code>&ltbody&gt</code>
+                    <code>&lth1&gtHello World!&lt/h1&gt</code>
+                    <code>&lt/body&gt</code>
+                </p>
+                <p class="content">
+                    You now know the basic building blocks of an HTML webpage! Experiment with the various other tags and see if you can make something else.
+                    Should you get stuck, or not know how to do something refer to some of the guides below.
+                </p>
+            </section>
+            <section class="main-section" id="Guides">
+                <header>Guides</header>
+                <p class="content">
+                    This module contains the following articles, which will take you through all the basic theory of HTML and provide ample opportunity for you to test out some skills.
+                </p>
+                <p class="content">
+                    <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Getting_started" target="_blank">Getting Started With HTML</a>
+                    <ul>
+                        <li>
+                            Covers the absolute basics of HTML, to get you started — we define elements, attributes, and other important terms, and show where they fit in the language. 
+                            We also show how a typical HTML page is structured and how an HTML element is structured, and explain other important basic language features. 
+                            Along the way, we'll play with some HTML to get you interested
+                        </li>
+                    </ul>
+                </p>
+                <p class="content">
+                    <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/HTML_text_fundamentals" target="_blank">HTML Text Fundamentals</a>
+                    <ul>
+                        <li>
+                            One of HTML's main jobs is to give text meaning (also known as semantics), so that the browser knows how to display it correctly. 
+                            This article looks at how to use HTML to break up a block of text into a structure of headings and paragraphs, add emphasis/importance to words, create lists, and more.
+                        </li>
+                    </ul>
+                </p>
+                <p class="content">
+                    <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Creating_hyperlinks">Creating Hyperlinks</a>
+                    <ul>
+                        <li>
+                            Hyperlinks are really important — they are what makes the web a web. This article shows the syntax required to make a link and discusses best practices for links.
+                        </li>
+                    </ul>
+                </p>
+                <p class="content">
+                    <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Document_and_website_structure">Document and website structure</a>
+                    <ul>
+                        <li>
+                            As well as defining individual parts of your page (such as "a paragraph" or "an image"), HTML is also used to define areas of your website (such as "the header", "the navigation menu", or "the main content column"). 
+                            This article looks into how to plan a basic website structure and how to write the HTML to represent this structure.
+                        </li>
+                    </ul>
+                </p>
+                <p class="content">
+                    <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Debugging_HTML">Debugging HTML</a>
+                    <ul>
+                        <li>
+                            Writing HTML is fine, but what if something goes wrong, and you can't work out where the error in the code is? 
+                            This article will introduce you to some tools that can help.
+                        </li>
+                    </ul>
+                </p>
+            </section>
+            <section class="main-section" id="Moving_Forward">
+                <header>Moving Forward</header>
+                <p class="content">
+                    At this point you may be wondering how you can make your website look good. With the magic of Cascading Style Sheets (CSS)
+                    you can do just that. 
+                </p>
+                <p class="content">
+                    Click <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank">here</a> to step into the world of CSS.
+                </p>
+            </section>
+            <section class="main-section" id="References">
+                <header>References</header>
+                <p class="content">
+                    All data was taken from <a href="https://developer.mozilla.org/en-US/" target="_blank">Mozilla Developer Network (MDN)</a>. Styling of webpage was heavily influenced by MDN as well.
+                </p>
+            </section>
+        </main>
     </div>
-    <main id="main-doc">
-        <section class="main-section" id="HTML:_HyperText_Markup_Language">
-            <header>HTML: HyperText Markup Language</header>
-            <article class="section-content">
-                <p class="content">
-                    <strong>HTML</strong> (HyperText Markup Language) is the most basic building block of the Web.
-                    It defines the meaning and structure of web content.
-                    Other technologies besides HTML are generally used to 
-                    describe a web page's appearance/presentation (CSS) or functionality/behavior (JavaScript).
-                </p>
-                <p class="content">
-                    "Hypertext" refers to links that connect web pages to one another,
-                    either within a single website or between websites. Links are a fundamental aspect of the Web.
-                    By uploading content to the Internet and linking it to pages created by other people, you become an active participant in the World Wide Web.
-                </p>
-                <p class="content">
-                    HTML uses "markup" to annotate text, images, and other content for display in a Web browser.
-                    HTML markup includes special "elements" such as <code>&lthead&gt</code>, <code>&lttitle&gt</code>, <code>&ltbody&gt</code>,
-                    <code>&ltaside&gt</code>, <code>&ltnav&gt</code>, <code>&ltheader&gt</code>, <code>&ltfooter&gt</code>, <code>&ltarticle&gt</code>,
-                    <code>&ltsection&gt</code>, <code>&ltp&gt</code>, and many others.
-                </p>
-                <p class="content">
-                    An HTML element is set off from other text in a document by "tags", which consist of the element name surrounded by "<code>&lt</code>" and "<code>&gt</code>".
-                    The name of an element inside a tag is case insensitive. That is, it can be written in uppercase, lowercase, or a mixture. For example, the <code>&lttitle&gt</code>
-                    tag can be written as <code>&ltTitle&gt</code>, <code>&ltTITLE&gt</code> or in any other way. However, the convention and recommended practice is to write tags in lowercase.
-                </p>
-                <p class="content">
-                    The articles below can help you learn more about HTML.
-                </p>
-            </article>
-        </section>
-        <section class="main-section" id="Key_Resources">
-            <header>Key Resources</header>
-            <p class="content">If you're new to web development, be sure to read our <a href="#">HTML Basics</a> article to learn what HTML is and how to use it.</p>
-            <p class="content">For articles about how to use HTML, as well as tutorials and complete examples, check out our <a href="#">HTML Learning Area</a>.</p>
-            <p class="content">In our extensive <a href="#">HTML reference</a> section, you'll find the details about every element and attribute in HTML.</p>
-            <p class="content">
-                Before you can write any markup, you'll need an integrated development environment or IDE for short. We recommend using Visual Studio Code
-                which you can download <a href="https://code.visualstudio.com/download" target="_blank">here</a>.
-            </p>
-        </section>
-        <section class="main-section" id="Get_Started">
-            <header>Get Started</header>
-            <p class="content">
-                Now that you are up to speed with the basics of HTML, let's take a look at some basic code.
-                Below is an example of HTML5 "boiler plate code". This is the foundation of all HTML5 webpages:
-            </p>
-            <p class="code-block">
-                <code>&lt!DOCTYPE html&gt</code>
-                <code>&lthtml lang="en"&gt</code>    
-                <code>&lthead&gt</code>
-                <code>&ltmeta charset="UTF-8"&gt</code>
-                <code>&ltmeta name="viewport" content="width=device-width, initial-scale=1.0"&gt</code>
-                <code>&ltmeta http-equiv="X-UA-Compatible" content="ie=edge"&gt</code>
-                <code>&lttitle&gt&lttitle&gt</code>
-                <code>&ltlink rel="stylesheet" href="style.css"&gt</code>
-                <code>&lt/head&gt</code>
-                <code>&ltbody&gt</code>
-                <code>&lt/body&gt</code>
-                <code>&lt/html&gt</code>
-            </p>
-            <p class="content">
-                After creating an index.html file in vscode, go to the first line and type the following: <code>html:5</code>.
-                You should see the above boiler plate code now in your own workspace thanks to Visual Studio Codes built-in Emmet extension.
-                Go ahead and try give your website a document title. If you get stuck, try placing it within the <code>&lttitle&gt</code> tag.
-            </p>
-            <p class="content">
-                If you navigate to the directory where you created the project and click the index.html file, you should
-                see your default browser open up to the webpage. Making changes within your IDE and hitting refresh in the browser
-                will reveal these changes. Try placing a header on your webpage with the title "Hello World!". If you get stuck, refer below to the code snippet:
-            </p>
-            <p class="code-block">
-                <code>&ltbody&gt</code>
-                <code>&lth1&gtHello World!&lt/h1&gt</code>
-                <code>&lt/body&gt</code>
-            </p>
-            <p class="content">
-                You now know the basic building blocks of an HTML webpage! Experiment with the various other tags and see if you can make something else.
-                Should you get stuck, or not know how to do something refer to some of the guides below.
-            </p>
-        </section>
-        <section class="main-section" id="Guides">
-            <header>Guides</header>
-            <p class="content">
-                This module contains the following articles, which will take you through all the basic theory of HTML and provide ample opportunity for you to test out some skills.
-            </p>
-            <p class="content">
-                <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Getting_started" target="_blank">Getting Started With HTML</a>
-                <ul>
-                    <li>
-                        Covers the absolute basics of HTML, to get you started — we define elements, attributes, and other important terms, and show where they fit in the language. 
-                        We also show how a typical HTML page is structured and how an HTML element is structured, and explain other important basic language features. 
-                        Along the way, we'll play with some HTML to get you interested
-                    </li>
-                </ul>
-            </p>
-            <p class="content">
-                <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/HTML_text_fundamentals" target="_blank">HTML Text Fundamentals</a>
-                <ul>
-                    <li>
-                        One of HTML's main jobs is to give text meaning (also known as semantics), so that the browser knows how to display it correctly. 
-                        This article looks at how to use HTML to break up a block of text into a structure of headings and paragraphs, add emphasis/importance to words, create lists, and more.
-                    </li>
-                </ul>
-            </p>
-            <p class="content">
-                <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Creating_hyperlinks">Creating Hyperlinks</a>
-                <ul>
-                    <li>
-                        Hyperlinks are really important — they are what makes the web a web. This article shows the syntax required to make a link and discusses best practices for links.
-                    </li>
-                </ul>
-            </p>
-            <p class="content">
-                <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Document_and_website_structure">Document and website structure</a>
-                <ul>
-                    <li>
-                        As well as defining individual parts of your page (such as "a paragraph" or "an image"), HTML is also used to define areas of your website (such as "the header", "the navigation menu", or "the main content column"). 
-                        This article looks into how to plan a basic website structure and how to write the HTML to represent this structure.
-                    </li>
-                </ul>
-            </p>
-            <p class="content">
-                <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Debugging_HTML">Debugging HTML</a>
-                <ul>
-                    <li>
-                        Writing HTML is fine, but what if something goes wrong, and you can't work out where the error in the code is? 
-                        This article will introduce you to some tools that can help.
-                    </li>
-                </ul>
-            </p>
-        </section>
-        <section class="main-section" id="Moving_Forward">
-            <header>Moving Forward</header>
-            <p class="content">
-                At this point you may be wondering how you can make your website look good. With the magic of Cascading Style Sheets (CSS)
-                you can do just that. 
-            </p>
-            <p class="content">
-                Click <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank">here</a> to step into the world of CSS.
-            </p>
-        </section>
-        <section class="main-section" id="References">
-            <header>References</header>
-            <p class="content">
-                All data was taken from <a href="https://developer.mozilla.org/en-US/" target="_blank">Mozilla Developer Network (MDN)</a>. Styling of webpage was heavily influenced by MDN as well.
-            </p>
-        </section>
-    </main>
 </body>
 </html>
 
