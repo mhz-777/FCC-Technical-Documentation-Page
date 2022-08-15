@@ -93,6 +93,8 @@ select {
 
 /* MOBILE STYLING START */
 
+
+
 .header-container {
   background-color: var(--body-bg-color);
   position: sticky;
@@ -250,8 +252,56 @@ li {
 
 /* MOBILE STYLING END */
 
+
+
 /* DESKTOP STYLING START */
 
+
+/* bigger screens */
+@media screen and (min-width: 55em){
+  
+  /* remove hamburger icon */
+  .show-nav {
+    display: none;
+  }
+
+  
+
+  /* reveal nav container */
+  #nav-container {
+    all: initial;
+    display: flex;
+  }
+
+  #navbar {
+    all: initial;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    height: 100vh;
+    width: 10vw;
+    background-color: var(--body-bg-color);
+    
+  }
+
+  .desktop-container {
+    display: flex;
+  }
+
+  #main-doc {
+    display: flex;
+    flex-direction: column;
+    padding-left: 10%;
+  }
+
+}
+
+/* for certain smaller desktop screens to prevent overlap */
+@media screen and (min-width: 880px) and (max-width: 75em){
+  #main-doc {
+    padding-left: 16%;
+  }
+}
 
 
 
